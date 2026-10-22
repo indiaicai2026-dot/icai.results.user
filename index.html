@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination Results Portal</title>
+
+    <style>
+        /* General Reset and Body Styling */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #92007B;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        /* Logo Image */
+        .logo-placeholder {
+            width: 70px;
+            height: 70px;
+            border: 2px solid #E5C158;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            flex-shrink: 0;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .logo-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* Header Text */
+        .header-title {
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+
+        .header-title h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        .header-title p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        /* Section Headings */
+        .section-heading {
+            background-color: #f2f2f2;
+            color: #92007B;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 12px 20px;
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+
+        /* Result List */
+        .result-list {
+            padding: 0 20px;
+        }
+
+        .result-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .result-item:last-child {
+            border-bottom: none;
+        }
+
+        .result-title {
+            font-size: 15px;
+            color: #222;
+            margin: 0 0 5px;
+        }
+
+        .result-date {
+            font-size: 13px;
+            font-style: italic;
+            margin: 0;
+        }
+
+        /* Clickable Links */
+        .result-date a {
+            color: #007D34;
+            text-decoration: none;
+            transition: text-decoration 0.2s;
+        }
+
+        .result-date a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer / Disclaimer */
+        .disclaimer-container {
+            margin-top: 30px;
+        }
+
+        .disclaimer-title {
+            background-color: #92007B;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        .disclaimer-text {
+            background-color: #f2f2f2;
+            padding: 15px 20px;
+            font-size: 11px;
+            line-height: 1.4;
+            color: #444;
+            text-align: justify;
+        }
+
+        /* Mobile Responsive Styling */
+        @media (max-width: 480px) {
+            body {
+                padding: 8px;
+            }
+
+            header {
+                padding: 12px;
+                gap: 12px;
+            }
+
+            .logo-placeholder {
+                width: 55px;
+                height: 55px;
+                margin-right: 0;
+            }
+
+            .header-title h1 {
+                font-size: 17px;
+            }
+
+            .header-title p {
+                font-size: 13px;
+                text-align: left;
+            }
+
+            .section-heading {
+                font-size: 14px;
+                padding: 10px 14px;
+            }
+
+            .result-list {
+                padding: 0 14px;
+            }
+
+            .result-title {
+                font-size: 14px;
+            }
+
+            .disclaimer-text {
+                padding: 12px 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header Section -->
+        <header>
+            <div class="logo-placeholder">
+                <img src="logo.png" alt="Institute Logo">
+            </div>
+
+            <div class="header-title">
+                <h1>The Institute of Chartered Accountants of India</h1>
+                <p>Examination Results</p>
+            </div>
+        </header>
+
+        <!-- Check Results Section -->
+        <div class="section-heading">
+            Check Results
+        </div>
+
+        <div class="result-list">
+
+            <div class="result-item">
+                <p class="result-title">
+                    <strong>Intermediate Examination</strong> : September 2026
+                </p>
+                <p class="result-date">
+                    <a href="https://your-new-website-url.com"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Announced on 22 Oct 2026
+                    </a>
+                </p>
+            </div>
+
+            <div class="result-item">
+                <p class="result-title">
+                    <strong>Intermediate Examination - UNITS</strong> : September 2026
+                </p>
+                <p class="result-date">
+                    <a href="https://your-new-website-url.com"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Announced on 22 Oct 2026
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Check Merit List Section -->
+        <div class="section-heading">
+            Check Merit List
+        </div>
+
+        <div class="result-list">
+
+            <div class="result-item">
+                <p class="result-title">
+                    <strong>Intermediate Examination</strong> : September 2026
+                </p>
+                <p class="result-date">
+                    <a href="https://your-new-website-url.com"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Announced on 22 Oct 2026
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Disclaimer Section -->
+        <div class="disclaimer-container">
+
+            <div class="disclaimer-title">
+                Disclaimer
+            </div>
+
+            <div class="disclaimer-text">
+                This is a fictional demonstration webpage created for
+                HTML and CSS practice. It is not affiliated with, issued
+                by, or verified by the Institute of Chartered Accountants
+                of India (ICAI). The displayed examination information
+                is sample content and must not be treated as an official
+                announcement or examination result.
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
